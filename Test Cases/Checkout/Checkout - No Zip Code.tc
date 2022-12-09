@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Order No Item</name>
+   <name>Checkout - No Zip Code</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9f2b09d5-45e9-4b70-8c10-b3f1015f6c04</testCaseGuid>
+   <testCaseGuid>e5763404-83ef-45ed-b98f-b02cd75ce532</testCaseGuid>
 </TestCaseEntity>

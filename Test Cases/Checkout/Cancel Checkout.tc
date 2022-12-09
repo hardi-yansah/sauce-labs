@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Order No Item</name>
+   <name>Cancel Checkout</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9f2b09d5-45e9-4b70-8c10-b3f1015f6c04</testCaseGuid>
+   <testCaseGuid>ba089e88-fa19-46db-8faf-2a6321a22b1f</testCaseGuid>
 </TestCaseEntity>

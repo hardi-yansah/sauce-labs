@@ -1,0 +1,19 @@
+{
+  "keywordFileContentHash": "8C09AC0FBBE0E867FCD390950B4AF74E",
+  "keywordClasses": [
+    {
+      "name": "saucePackage.sortingText",
+      "keywordMethods": [
+        {
+          "name": "refreshBrowser",
+          "parameters": []
+        },
+        {
+          "name": "checkSorting",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

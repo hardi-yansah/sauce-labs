@@ -20,9 +20,15 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Login/Login Standard'), [('username') : 'standard_user', ('password') : 'secret_sauce'], 
     FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'sauceKeywords.OrderKeyword.AddtoCharts'()
+WebUI.click(findTestObject('inventory_item_page/inventory_item_name'))
 
-CustomKeywords.'sauceKeywords.OrderKeyword.RemoveItemHome'()
+WebUI.waitForImagePresent(findTestObject('inventory_details/inventory_details_img'), 10)
 
-assert WebUI.getUrl() == (GlobalVariable.url + 'inventory.html')
+WebUI.verifyElementVisible(findTestObject('inventory_details/inventory_details_name'))
+
+WebUI.verifyElementVisible(findTestObject('inventory_details/inventory_details_desc'))
+
+WebUI.verifyElementVisible(findTestObject('inventory_details/inventory_details_price'))
+
+WebUI.verifyElementVisible(findTestObject('inventory_item_page/button_AddToCart'))
 

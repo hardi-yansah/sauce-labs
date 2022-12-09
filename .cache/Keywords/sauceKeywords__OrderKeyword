@@ -1,0 +1,31 @@
+{
+  "keywordFileContentHash": "81908D35EE330D734E6B7ED828D1951B",
+  "keywordClasses": [
+    {
+      "name": "sauceKeywords.OrderKeyword",
+      "keywordMethods": [
+        {
+          "name": "GetCountBadges",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "RemoveItem",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "RemoveItemHome",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "AddtoCharts",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

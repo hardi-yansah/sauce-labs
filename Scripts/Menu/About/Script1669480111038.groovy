@@ -18,13 +18,9 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 WebUI.callTestCase(findTestCase('Login/Login Standard'), [('username') : 'standard_user', ('password') : 'secret_sauce'], 
     FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'sauceKeywords.OrderKeyword.AddtoCharts'()
+WebUI.click(findTestObject('sidebar_menu/button_OpenMenu'))
 
-CustomKeywords.'sauceKeywords.OrderKeyword.GetCountBadges'()
+WebUI.click(findTestObject('sidebar_menu/a_about'))
 
-WebUI.click(findTestObject('inventory_item_page/shopping_cart_container'))
-
-WebUI.callTestCase(findTestCase('Checkout/Checkout Process'), [:], FailureHandling.STOP_ON_FAILURE)
-
-assert WebUI.getUrl() == (GlobalVariable.url + 'inventory.html')
+assert WebUI.getUrl() == 'https://saucelabs.com/'
 

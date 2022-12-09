@@ -20,9 +20,5 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Login/Login Standard'), [('username') : 'standard_user', ('password') : 'secret_sauce'], 
     FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'sauceKeywords.OrderKeyword.AddtoCharts'()
-
-CustomKeywords.'sauceKeywords.OrderKeyword.RemoveItemHome'()
-
-assert WebUI.getUrl() == (GlobalVariable.url + 'inventory.html')
+WebUI.selectOptionByValue(findTestObject('home_page/Filter Product'), 'hilo', false)
 

@@ -17,12 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Login/Login Standard'), [('username') : 'standard_user', ('password') : 'secret_sauce'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Item Detail/Item Detail'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-CustomKeywords.'sauceKeywords.OrderKeyword.AddtoCharts'()
+WebUI.click(findTestObject('inventory_item_page/button_AddToCart'))
 
-CustomKeywords.'sauceKeywords.OrderKeyword.RemoveItemHome'()
+WebUI.click(findTestObject('inventory_item_page/shopping_cart_container'))
+
+WebUI.callTestCase(findTestCase('Checkout/Checkout Process'), [:], FailureHandling.STOP_ON_FAILURE)
 
 assert WebUI.getUrl() == (GlobalVariable.url + 'inventory.html')
 

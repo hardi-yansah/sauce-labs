@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "74C29EA0612B2271F2815EB834B7DEDE",
+  "keywordClasses": [
+    {
+      "name": "sauceKeywords.getBagdes",
+      "keywordMethods": [
+        {
+          "name": "GetCountBadges",
+          "parameters": [],
+          "javadoc": "/**\n\t * Refresh browser\n\t */"
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
